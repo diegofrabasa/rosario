@@ -14,17 +14,23 @@ nav {
     max-width: 1280px;
     height: 160px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     margin: auto;
 }
 
 .nav__mil-rosarios {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.img_mil-rosarios {
-    width: 160px;
+.nav__titulo1 {
+    color: #fff;
+}
+
+.nav__titulo2 {
+    color: #fff;
 }
 
 .nav__logos {
@@ -52,10 +58,20 @@ main {
 
 .progress-section {
     margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#progress-bar {
+    height: 32px;
+    width: 320px;
 }
 
 #progress-bar-num {
-    display: block;
+    padding-left: 24px;
+    color: #002445;
+    font-size: 24px;
 }
 
 .contenedor-botellas {
@@ -69,14 +85,59 @@ main {
 .main__botella {
     display: grid;
     align-items: center;
+    justify-items: center;
 }
 
 .img_botella {
     width: 100%;
 }
 
+button {
+    background-color: #002445;
+    border: none;
+    border-radius: 16px;
+    width: 80%;
+    height: 100px;
+    padding: 16px;
+    margin-top: 48px;
+}
+
+button p {
+    color: #fff;
+}
+
+button h3 {
+    padding-bottom: 8px;
+}
+
+.main__botella-button-1 {
+    color:#F67820;
+}
+
+.main__botella-button-2 {
+    color:#E50019;
+}
+
+.main__botella-button-3 {
+    color:#8ABB2A;
+}
+
+.main__botella-button-4 {
+    color:#009CDC;
+}
+
+.main__botella-button-5 {
+    color:#E0007A;
+}
+
 .contador{
     text-align: center;
+    padding: 20px 24px;
+    border-radius: 30px;
+    background-color: #002445;
+    color: #fff;
+    font-size: 20px;
+    margin: -64px -70% 0 0;
 }
 
 /* ----------------------- FOOTER ------------------------- */
