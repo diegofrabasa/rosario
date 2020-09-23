@@ -1,3 +1,12 @@
+db.collection('grupos').get().then((snapshot) => {
+   snapshot.docs.forEach(doc => {
+      console.log(doc.data())
+   })
+})
+
+//db.collection('grupos').doc('gqE3it5npUKwVi7srcDV').update({ familias:1})
+
+
 let cont1 = parseInt(document.getElementById("cont-1").innerHTML)
 let cont2 = parseInt(document.getElementById("cont-2").innerHTML)
 let cont3 = parseInt(document.getElementById("cont-3").innerHTML)
