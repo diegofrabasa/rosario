@@ -69,6 +69,7 @@ main {
 .progressbar-total {
     font-family: 'Bebas Neue', cursive;
     font-size: 24px;
+    text-align: left;
 }
 
 #progressbar-ext {
@@ -76,6 +77,7 @@ main {
     border-radius: 13px;
     /* (height of inner div) / 2 + padding */
     padding: 3px;
+    margin: 4px 0;
 }
 
 #progressbar-int {
@@ -95,6 +97,7 @@ main {
     color: #002445;
     font-size: 24px;
     font-family: 'Bebas Neue', cursive;
+    text-align: right;
 }
 
 .contenedor-botellas {
