@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&display=swap');
+
 /* ------------------------ HEADER ----------------------- */
 
 header{
@@ -72,6 +74,7 @@ main {
     padding-left: 24px;
     color: #002445;
     font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .contenedor-botellas {
@@ -104,10 +107,13 @@ button {
 
 button p {
     color: #fff;
+    font-family: 'Architects Daughter', cursive;
 }
 
 button h3 {
     padding-bottom: 8px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
 }
 
 .main__botella-button-1 {
@@ -137,6 +143,7 @@ button h3 {
     background-color: #002445;
     color: #fff;
     font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
     margin: -64px -70% 0 0;
 }
 
