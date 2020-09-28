@@ -1,7 +1,23 @@
 const fb_document = 'gqE3it5npUKwVi7srcDV';
 
-const color = () => {
-   document.getElementById("img-botella-1").setAttribute("offset","0.1")
+const color1 = (c) => {
+   document.getElementById("img-botella-1").setAttribute("offset",(1-(c/200)))
+}
+
+const color2 = (c) => {
+   document.getElementById("img-botella-2").setAttribute("offset",(1-(c/200)))
+}
+
+const color3 = (c) => {
+   document.getElementById("img-botella-3").setAttribute("offset",(1-(c/200)))
+}
+
+const color4 = (c) => {
+   document.getElementById("img-botella-4").setAttribute("offset",(1-(c/200)))
+}
+
+const color5 = (c) => {
+   document.getElementById("img-botella-5").setAttribute("offset",(1-(c/200)))
 }
 
 const inicio = (doc) => {
@@ -16,6 +32,12 @@ const inicio = (doc) => {
    let cont3 = parseInt(document.getElementById("cont-3").innerHTML)
    let cont4 = parseInt(document.getElementById("cont-4").innerHTML)
    let cont5 = parseInt(document.getElementById("cont-5").innerHTML)
+
+   color1(cont1);
+   color2(cont2);
+   color3(cont3);
+   color4(cont4);
+   color5(cont5);
 
    let conteo = cont1 + cont2 + cont3 + cont4 + cont5;
 
@@ -42,6 +64,7 @@ function suma1() {
    document.getElementById("cont-1").innerHTML = cont1;
    document.getElementById("progress-bar").value+=1;
    document.getElementById("progress-bar-num").innerHTML = document.getElementById("progress-bar").value;
+   color1(cont1);
    db.collection('grupos').doc(fb_document).update({ kinderyprimaria: cont1});
 }
 
@@ -51,6 +74,7 @@ function suma2() {
    document.getElementById("cont-2").innerHTML = cont2;
    document.getElementById("progress-bar").value+=1;
    document.getElementById("progress-bar-num").innerHTML = document.getElementById("progress-bar").value;
+   color2(cont2);
    db.collection('grupos').doc(fb_document).update({ secundaria: cont2});
 }
 
@@ -60,6 +84,7 @@ function suma3() {
    document.getElementById("cont-3").innerHTML = cont3;
    document.getElementById("progress-bar").value+=1;
    document.getElementById("progress-bar-num").innerHTML = document.getElementById("progress-bar").value;
+   color3(cont3);
    db.collection('grupos').doc(fb_document).update({ prepaup: cont3});
 }
 
@@ -69,6 +94,7 @@ function suma4() {
    document.getElementById("cont-4").innerHTML = cont4;
    document.getElementById("progress-bar").value+=1;
    document.getElementById("progress-bar-num").innerHTML = document.getElementById("progress-bar").value;
+   color4(cont4);
    db.collection('grupos').doc(fb_document).update({ personal: cont4});
 }
 
@@ -78,5 +104,6 @@ function suma5() {
    document.getElementById("cont-5").innerHTML = cont5;
    document.getElementById("progress-bar").value+=1;
    document.getElementById("progress-bar-num").innerHTML = document.getElementById("progress-bar").value;
+   color5(cont5);
    db.collection('grupos').doc(fb_document).update({ familias: cont5});
 }
