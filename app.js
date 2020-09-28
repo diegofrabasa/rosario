@@ -1,4 +1,6 @@
 const fb_document = 'gqE3it5npUKwVi7srcDV';
+const modal = document.getElementById("myModal");
+const cerrar = document.getElementById("cerrar");
 
 //------------------------------------FUNCIONES PARA COLOREAR LOS BOTES--------------------------------------------
 
@@ -91,6 +93,7 @@ function suma1() {
    progreso();
    color1(cont1);
    db.collection('grupos').doc(fb_document).update({ kinderyprimaria: cont1});
+   modal.style.display = "block";
 }
 
 function suma2() {
@@ -100,6 +103,7 @@ function suma2() {
    progreso();
    color2(cont2);
    db.collection('grupos').doc(fb_document).update({ secundaria: cont2});
+   modal.style.display = "block";
 }
 
 function suma3() {
@@ -109,6 +113,7 @@ function suma3() {
    progreso();
    color3(cont3);
    db.collection('grupos').doc(fb_document).update({ prepaup: cont3});
+   modal.style.display = "block";
 }
 
 function suma4() {
@@ -118,6 +123,7 @@ function suma4() {
    progreso();
    color4(cont4);
    db.collection('grupos').doc(fb_document).update({ personal: cont4});
+   modal.style.display = "block";
 }
 
 function suma5() {
@@ -127,4 +133,15 @@ function suma5() {
    progreso();
    color5(cont5);
    db.collection('grupos').doc(fb_document).update({ familias: cont5});
+   modal.style.display = "block";
+}
+
+cerrar.onclick = function() {
+   modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+   if (event.target == modal) {
+   modal.style.display = "none";
+   }
 }
