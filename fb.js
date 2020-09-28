@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyBudej8M9PqUsXKwZVpvfTwBqmPKJNy6Eg",
     authDomain: "rosario-efa41.firebaseapp.com",
     databaseURL: "https://rosario-efa41.firebaseio.com",

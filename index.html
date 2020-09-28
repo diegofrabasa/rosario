@@ -9,7 +9,6 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
-
     <!-- TODO: Add SDKs for Firebase products that you want to use
     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
@@ -30,8 +29,15 @@
 
     <main>
         <div class="progress-section">
-            <progress id="progress-bar" value="0" max="1000"> 100% </progress>
-            <label id="progress-bar-num" for="progress-bar">0</label>
+
+            <h3 class="progressbar-total">TOTAL</h3>
+            <div id="progressbar-ext">
+                <div id="progressbar-int"></div>
+            </div>
+            <span id="progress-bar-num">0</span>
+
+            <!-- <progress id="progress-bar" value="0" max="1000"> 100% </progress> -->
+            
         </div>
         
         <div class="contenedor-botellas">
@@ -62,7 +68,7 @@
                         <path id="rellenoBotella-2" data-name="rellenoBotella" d="M233.978,460.648,210.543,272.173H113.706L87.785,460.334a7.65,7.65,0,0,0,7.57,8.609l131.016.29a7.659,7.659,0,0,0,7.608-8.585ZM118.425,378.1c3.112,0,3.1,4.822-.008,4.814S115.317,378.082,118.425,378.1Zm-3.712,73.739c-4.913-.012-4.9-7.622.02-7.612S119.622,451.844,114.713,451.836Zm.034-15.256c-18.642-.038-18.579-28.939.062-28.9S133.383,436.628,114.747,436.58Zm14.285-32.226c-6.494-.018-6.476-10.1.024-10.079S135.532,404.368,129.032,404.354Z" transform="translate(3686.487 -734.413)" fill="url(#linear-gradient1)"/>
                       </g>
                     </g>
-                  </svg>
+                </svg>
                 <!-- fin botella -->
                 <p id="cont-1" class="contador">0</p>
                 <button id="btn1"><h3 class="main__botella-button-1">KINDER Y PRIMARIA</h3><p>Por los héroes - profesionistas de la salud</p></button>
@@ -94,7 +100,7 @@
                         <path id="rellenoBotella-2" data-name="rellenoBotella" d="M233.978,460.648,210.543,272.173H113.706L87.785,460.334a7.65,7.65,0,0,0,7.57,8.609l131.016.29a7.659,7.659,0,0,0,7.608-8.585ZM118.425,378.1c3.112,0,3.1,4.822-.008,4.814S115.317,378.082,118.425,378.1Zm-3.712,73.739c-4.913-.012-4.9-7.622.02-7.612S119.622,451.844,114.713,451.836Zm.034-15.256c-18.642-.038-18.579-28.939.062-28.9S133.383,436.628,114.747,436.58Zm14.285-32.226c-6.494-.018-6.476-10.1.024-10.079S135.532,404.368,129.032,404.354Z" transform="translate(3686.487 -734.413)" fill="url(#linear-gradient2)"/>
                       </g>
                     </g>
-                  </svg>
+                </svg>
                 <!-- fin botella -->
                 <p id="cont-2" class="contador">0</p>
                 <button id="btn2"><h3 class="main__botella-button-2">SECUNDARIA</h3><p>Por los enfermos y sus familiares</p></button>
@@ -126,7 +132,7 @@
                         <path id="rellenoBotella-2" data-name="rellenoBotella" d="M233.978,460.648,210.543,272.173H113.706L87.785,460.334a7.65,7.65,0,0,0,7.57,8.609l131.016.29a7.659,7.659,0,0,0,7.608-8.585ZM118.425,378.1c3.112,0,3.1,4.822-.008,4.814S115.317,378.082,118.425,378.1Zm-3.712,73.739c-4.913-.012-4.9-7.622.02-7.612S119.622,451.844,114.713,451.836Zm.034-15.256c-18.642-.038-18.579-28.939.062-28.9S133.383,436.628,114.747,436.58Zm14.285-32.226c-6.494-.018-6.476-10.1.024-10.079S135.532,404.368,129.032,404.354Z" transform="translate(3686.487 -734.413)" fill="url(#linear-gradient3)"/>
                       </g>
                     </g>
-                  </svg>
+                </svg>
                 <!-- fin botella -->
                 <p id="cont-3" class="contador">0</p>
                 <button id="btn3"><h3 class="main__botella-button-3">PREPAUP</h3><p>Por las clases y el trabajo en la pandemia</p></button>
@@ -158,7 +164,7 @@
                         <path id="rellenoBotella-2" data-name="rellenoBotella" d="M233.978,460.648,210.543,272.173H113.706L87.785,460.334a7.65,7.65,0,0,0,7.57,8.609l131.016.29a7.659,7.659,0,0,0,7.608-8.585ZM118.425,378.1c3.112,0,3.1,4.822-.008,4.814S115.317,378.082,118.425,378.1Zm-3.712,73.739c-4.913-.012-4.9-7.622.02-7.612S119.622,451.844,114.713,451.836Zm.034-15.256c-18.642-.038-18.579-28.939.062-28.9S133.383,436.628,114.747,436.58Zm14.285-32.226c-6.494-.018-6.476-10.1.024-10.079S135.532,404.368,129.032,404.354Z" transform="translate(3686.487 -734.413)" fill="url(#linear-gradient4)"/>
                       </g>
                     </g>
-                  </svg>
+                </svg>
                 <!-- fin botella -->
                 <p id="cont-4" class="contador">0</p>
                 <button id="btn4"><h3 class="main__botella-button-4">PERSONAL</h3><p>Por el desarrollo de una vacuna y tratamiento</p></button>
@@ -190,7 +196,7 @@
                         <path id="rellenoBotella-2" data-name="rellenoBotella" d="M233.978,460.648,210.543,272.173H113.706L87.785,460.334a7.65,7.65,0,0,0,7.57,8.609l131.016.29a7.659,7.659,0,0,0,7.608-8.585ZM118.425,378.1c3.112,0,3.1,4.822-.008,4.814S115.317,378.082,118.425,378.1Zm-3.712,73.739c-4.913-.012-4.9-7.622.02-7.612S119.622,451.844,114.713,451.836Zm.034-15.256c-18.642-.038-18.579-28.939.062-28.9S133.383,436.628,114.747,436.58Zm14.285-32.226c-6.494-.018-6.476-10.1.024-10.079S135.532,404.368,129.032,404.354Z" transform="translate(3686.487 -734.413)" fill="url(#linear-gradient5)"/>
                       </g>
                     </g>
-                  </svg>
+                </svg>
                 <!-- fin botella -->
                 <p id="cont-5" class="contador">0</p>
                 <button id="btn5"><h3 class="main__botella-button-5">FAMILIAS</h3><p>Por todas las familias y su unidad</p></button>

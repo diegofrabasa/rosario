@@ -59,10 +59,31 @@ main {
 }
 
 .progress-section {
-    margin: 40px 0 0 0;
-    display: flex;
+    margin: 40px auto;
+    max-width: 600px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+}
+
+.progressbar-total {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+}
+
+#progressbar-ext {
+    background-color: #00244573;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+}
+
+#progressbar-int {
+    background-color: #002445;
+    width: 10%;
+    /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
 }
 
 #progress-bar {
@@ -71,7 +92,6 @@ main {
 }
 
 #progress-bar-num {
-    padding-left: 24px;
     color: #002445;
     font-size: 24px;
     font-family: 'Bebas Neue', cursive;
