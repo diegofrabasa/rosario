@@ -99,15 +99,16 @@ button {
     background-color: #002445;
     border: none;
     border-radius: 16px;
-    width: 80%;
-    height: 100px;
-    padding: 16px;
+    width: 90%;
+    height: 120px;
+    padding: 8px;
     margin-top: 32px;
 }
 
 button p {
     color: #fff;
     font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
 }
 
 button h3 {
@@ -152,4 +153,77 @@ button h3 {
 footer {
     height: 80px;
     background-color: #002445;
+}
+
+
+/* ----------------------- MEDIA QUERIES ------------------------- */
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        height: 120px;
+        display: grid;
+        grid-template-columns: 2fr 5fr 5fr;
+        margin: auto;
+    }
+
+    .contenedor-botellas {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 24px;
+        padding: 40px 0;
+    }
+
+    .nav__mil-rosarios-img {
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        height: 120px;
+        display: grid;
+        grid-template-columns: 2fr 5fr 5fr;
+        margin: auto;
+    }
+
+    .contenedor-botellas {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+        padding: 40px 0;
+    }
+
+    .nav__mil-rosarios-img {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    nav {
+        height: 80px;
+        display: grid;
+        grid-template-columns: 2fr 5fr 5fr;
+        margin: auto;
+    }
+
+    .progress-section {
+        margin: 24px;
+    }
+
+    .contenedor-botellas {
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+        padding: 40px 0;
+    }
+
+    .nav__mil-rosarios-img {
+        width: 100px;
+    }
+
+    .img_logo-yaocalli {
+        width: 40px;
+    }
+    
+    .img_logo-up {
+        width: 40px;
+    }
 }
