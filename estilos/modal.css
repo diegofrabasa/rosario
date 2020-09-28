@@ -71,5 +71,49 @@
     cursor: pointer;
 }
 
+/* ----------------------- MEDIA QUERIES ------------------------- */
+
+@media only screen and (max-width: 1024px) {
+    .modal-content {
+        width: 60%;
+    }
+    
+    .modal-body-img {
+        width: 280px;
+    }
+
+    .modal-gracias {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-content {
+        width: 70%;
+    }
+    
+    .modal-body-img {
+        width: 240px;
+    }
+
+    .modal-gracias {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .modal-content {
+        width: 80%;
+    }
+    
+    .modal-body-img {
+        width: 200px;
+    }
+
+    .modal-gracias {
+        font-size: 24px;
+    }
+}
+
 
 
