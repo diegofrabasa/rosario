@@ -126,6 +126,7 @@ button {
     height: 120px;
     padding: 8px;
     margin-top: 32px;
+    cursor: pointer;
 }
 
 button p {
