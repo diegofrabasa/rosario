@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202.057" height="341.76" viewBox="0 0 202.057 341.76">
+  <defs>
+    <filter id="exteriorBotella" x="0" y="0" width="202.057" height="341.76" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.898" dy="1.898" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.474" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="botella" transform="translate(-3484 655.364)">
+    <g transform="matrix(1, 0, 0, 1, 3484, -655.36)" filter="url(#exteriorBotella)">
+      <path id="exteriorBotella-2" data-name="exteriorBotella" d="M108.5,553.18l131.008.278a33.853,33.853,0,0,0,33.688-37.971l-22.63-184.976a33.922,33.922,0,0,0-29.611-29.517l-.012-20.694h2.391a13.572,13.572,0,0,0,13.558-13.584l-.028-38.136a13.563,13.563,0,0,0-13.542-13.562l-97.3.073a13.568,13.568,0,0,0-13.568,13.58l.026,38.138a13.576,13.576,0,0,0,13.546,13.56h2.433l.016,20.388a33.914,33.914,0,0,0-30.048,29.422L74.977,515.058A33.868,33.868,0,0,0,108.5,553.18Z" transform="translate(-74.71 -215.02)" fill="#fff"/>
+    </g>
+    <g id="centroBotella" transform="translate(-264 -78)">
+      <path id="marcoAzul" d="M252.891,510.281,230.257,325.3a20.276,20.276,0,0,0-20.086-17.826l-9.61-.016-.034-47.581,15.963-.012-.03-38.134-97.27.069.034,38.142,15.959-.012.038,47.383-10-.02a20.288,20.288,0,0,0-20.175,17.739L81.607,509.908a20.3,20.3,0,0,0,20.082,22.844l131.023.278A20.278,20.278,0,0,0,252.891,510.281Z" transform="translate(3680.122 -785.574)" fill="#00a8e8" opacity="0.3" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="rellenoBotella" d="M233.978,460.648,210.543,272.173H113.706L87.785,460.334a7.65,7.65,0,0,0,7.57,8.609l131.016.29a7.659,7.659,0,0,0,7.608-8.585ZM118.425,378.1c3.112,0,3.1,4.822-.008,4.814S115.317,378.082,118.425,378.1Zm-3.712,73.739c-4.913-.012-4.9-7.622.02-7.612S119.622,451.844,114.713,451.836Zm.034-15.256c-18.642-.038-18.579-28.939.062-28.9S133.383,436.628,114.747,436.58Zm14.285-32.226c-6.494-.018-6.476-10.1.024-10.079S135.532,404.368,129.032,404.354Z" transform="translate(3686.487 -734.413)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

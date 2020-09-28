@@ -25,12 +25,8 @@ nav {
     flex-direction: column;
 }
 
-.nav__titulo1 {
-    color: #fff;
-}
-
-.nav__titulo2 {
-    color: #fff;
+.nav__mil-rosarios-img {
+    width: 240px;
 }
 
 .nav__logos {
@@ -54,6 +50,10 @@ main {
     max-width: 1280px;
     margin: auto;
     text-align: center;
+    background-image: url(../assets/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .progress-section {
@@ -89,7 +89,7 @@ main {
 }
 
 .img_botella {
-    width: 100%;
+    max-width: 160px;
 }
 
 button {
@@ -99,7 +99,7 @@ button {
     width: 80%;
     height: 100px;
     padding: 16px;
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 button p {

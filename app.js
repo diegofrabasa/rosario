@@ -1,5 +1,9 @@
 const fb_document = 'gqE3it5npUKwVi7srcDV';
 
+const color = () => {
+   document.getElementById("img-botella-1").setAttribute("offset","0.1")
+}
+
 const inicio = (doc) => {
    document.getElementById("cont-1").innerHTML = doc.data().kinderyprimaria
    document.getElementById("cont-2").innerHTML = doc.data().secundaria
