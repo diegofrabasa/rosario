@@ -136,6 +136,8 @@ function suma5() {
    modal.style.display = "block";
 }
 
+//----------------------------------FUNCIONES BOTONES MODAL----------------------------------------------
+
 cerrar.onclick = function() {
    modal.style.display = "none";
 }
