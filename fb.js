@@ -13,3 +13,17 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+
+const db = {
+    collection: function (params) {
+        return {
+            doc: function (params) {
+                return {
+                    update: function (params) {
+                        console.log('te la pelas');
+                    }
+                }
+            }
+        } 
+    }
+}
