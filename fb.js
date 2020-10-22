@@ -20,7 +20,7 @@ const db = {
             doc: function (params) {
                 return {
                     update: function (params) {
-                        console.log('te la pelas');
+                        console.log('Amen!');
                     }
                 }
             }
