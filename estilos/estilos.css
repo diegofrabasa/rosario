@@ -98,6 +98,12 @@ main {
     text-align: right;
 }
 
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+    color:  #002445;
+}
+
 .contenedor-botellas {
     min-height: 500px;
     display: grid;
